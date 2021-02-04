@@ -42,10 +42,11 @@ function App() {
         {datas.map(a=>{
           return (
             <div className="container">
-          <div className="details" key={a.account_id}> <p><b>Steam ID:</b> {a.steamid}</p>
+          <div className="details" key={a.account_id}>
+                {/* <p className="cc"><b>Steam ID:</b> {a.steamid}</p> */}
                 <img src={a.avatarfull}/>
-                <p><b>Name :</b> {a.name}</p>
-                <p><b>Team :</b> {a.team_name}</p>
+                <p className="aa"><b>Name :</b> {a.name}</p>
+                <p className="bb"><b>Team :</b> {a.team_name}</p>
                 <a href={a.profileurl}><b>Profile Url</b></a>
                 
                 </div>
